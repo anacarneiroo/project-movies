@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    font-family: Questrial;
+}
+
+header{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+}
+
+header > div{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+header > div:hover{
+    transition: all 2s ease;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.455);
+}
+
+header:hover{
+    transition: all 2s ease;
+    background-position: left;
+}
+
+header:not(:hover){
+    transition: all 2s ease;
+    background-position: right;
+}
+
+header > div:not(:hover){
+    transition: all 2s ease;
+}
+
+.popular{
+    overflow: auto;
+    display: flex;
+    margin: 20px 0px 20px 0px;
+    padding: 8px 0px 8px 0px;
+}
+
+section{
+    margin: 100px 0px;
+}
+
+.popular::-webkit-scrollbar{
+    display: none;
+}
+
+p{
+    margin-left: 10px;
+}
+
+button{
+    padding: 5px;
+    height: 35px;
+    width: 35px;
+    background-color: rgba(0, 0, 0, 0.418);
+    border: 1px solid rgb(110, 110, 110);
+    border-radius: 30%;
+    margin: 20px 0px;
+}
+
+input{
+    border-radius: 10px;
+    height: 34px;
+    background-color: rgba(0, 0, 0, 0.313);
+    border: 1px solid rgb(110, 110, 110);
+    text-indent: 5px;
+    color: white;
+    margin: 20px 10px 0px 20px;
+}
+
+.poster{
+    margin: 0px 8px 0px 8px;
+}
+
+img{
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+img:hover{
+    transition: 1s;
+    border:1px solid rgb(110, 110, 110);
+}
+
+img:not(:hover){
+    transition: 1s;
+}
+
+.material-symbols-outlined {
+  color: white;
+}
